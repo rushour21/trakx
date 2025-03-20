@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainContainer_r{
+    display: flex;
+}
+.containerLeft_r{
+    width: 63vw;
+    display: flex;
+    flex-direction: column;
+}
+.containerRight_r{
+    width: 37vw;
+    height: 100vh;
+}
+.containerRight_r img{
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    margin: 25px 25px;
+}
+.containerLeft_r form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 35%;
+    margin-top: 20px;
+    gap: 10px;
+}
+.containerLeft_r form >label{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+.input{
+    height: 32px;
+    border-radius: 12px;
+    border: 1px solid #ccc
+}
+.input:focus {
+    border: 1px solid #ccc; /* Prevents border color change */
+    box-shadow: none !important; /* Removes shadow if applied */
+}
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+.formTitle {
+    font-size: large;
+    color: #333333;
+}
+#checkboxx{
+    display: flex;
+    flex-direction: row;
+}
+form button{
+    height: 32px;
+    border-radius: 30px;
+    border: 0;
+    background-color: #C3C3C3;
+}
+.containerLeft_r p {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
