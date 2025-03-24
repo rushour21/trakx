@@ -40,10 +40,13 @@ const meeting = new mongoose.Schema({
         type: String,
         required: true
     },
-    participants:  [{
-        email: { type: String, required: true },
-        status: { type: String, enum: ["pending", "accepted", "rejected"], default: "pending" }
-    }],
+    participants: [
+        {
+            email: { type: String, required: true },
+            status: { type: String, enum: ["pending", "accepted", "rejected"], default: "pending" },
+            role: { type: String, enum: ["creator", "invitors"], required: true }
+        }
+    ],
     status: { 
         type: String, 
         enum: ["pending", "accepted", "rejected"], 

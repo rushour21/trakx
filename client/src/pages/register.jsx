@@ -29,7 +29,7 @@ export default function register() {
                         ...prev,
                         FirstName : event.target.value
                     }
-                })} value={formData.FirstName} type="text"/>
+                })} value={formData.firstname} type="text"/>
                 </label>
                 
                 <label>Last Name
@@ -38,7 +38,7 @@ export default function register() {
                         ...prev,
                         LastName : event.target.value
                     }
-                })} value={formData.LastName} type="text"/>
+                })} value={formData.lastname} type="text"/>
                 </label>
 
                 <label >Email
@@ -47,7 +47,7 @@ export default function register() {
                         ...prev,
                         Email : event.target.value
                     }
-                })} value={formData.Email} type="text" />
+                })} value={formData.email} type="text" />
                 </label>
 
                 <label >Password
@@ -56,7 +56,7 @@ export default function register() {
                         ...prev,
                         Password : event.target.value
                     }
-                })} value={formData.Password} type="text"/>
+                })} value={formData.password} type="text"/>
                 </label>
 
                 <label >Confirm Password
@@ -65,7 +65,7 @@ export default function register() {
                         ...prev,
                         Mobile : event.target.value
                     }
-                })} value={formData.ConfirmPassword} type="text" />
+                })} value={formData.confirmPassword} type="text" />
                 </label>
 
             <label id='checkboxx'>

@@ -2,7 +2,6 @@ import express from "express";
 import user from "../models/users.js";
 import bcrypt from "bcrypt";
 import { errorLogger } from "../middleware/log.js";
-import { authMiddleware } from "../middleware/auth.js";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 dotenv.config();
@@ -19,8 +18,8 @@ router.post("/register", async (req, res) => {
         else {
             const hashedPassword = bcrypt.hashSync(password, 10);
             const newUser = new user({
-                firstname: firstname,
-                lastname: lastname,
+                firstName: firstname,
+                lastName: lastname,
                 email: email,
                 password: hashedPassword,
             });
@@ -33,10 +32,10 @@ router.post("/register", async (req, res) => {
     }
 });
 
-router.post("/set-username-preference", errorLogger, authMiddleware, async (req, res) => {
+router.post("/preference/:userId", errorLogger,  async (req, res) => {
     try {
         const { username, preference } = req.body;
-        const userId = req.user.id; // Get user ID from authMiddleware
+        const { userId } = req.params;  // Get userId from URL
         // Find user by ID
         const existingUser = await user.findById(userId);
 
@@ -52,7 +51,6 @@ router.post("/set-username-preference", errorLogger, authMiddleware, async (req,
             }
             existingUser.userName = username; // Set the username
         }
-
         // Update user preference
         if (preference) {
             existingUser.preference = preference;
@@ -72,19 +70,19 @@ router.post("/set-username-preference", errorLogger, authMiddleware, async (req,
 router.post("/login", errorLogger, async (req, res) => {
     try {
         const { username, password } = req.body;
-        const existingUser = await user.findOne({ username: username });
+        const existingUser = await user.findOne({ userName: username });
         if (!existingUser) {
-            return res.status(400).json({ message: "Invalid Credentials" });
+            return res.status(400).json({ message: "Invalid username" });
         }
         else {
             const isPasswordCorrect = bcrypt.compareSync(password, existingUser.password);
             if (!isPasswordCorrect) {
-                return res.status(400).json({ message: "Invalid Credentials" });
+                return res.status(400).json({ message: "Invalid password" });
             }
             const token = jwt.sign({
                 id: existingUser._id,
                 username: existingUser.username
-            }, process.env.JWT_SECRET, { expiresIn: "1h" });
+            }, process.env.JWT_SECRET, { expiresIn: "3h" });
             res.status(200).json({ message: "User logged in successfully", token: token });
         }
     }

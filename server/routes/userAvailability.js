@@ -1,33 +1,41 @@
 import express from "express";
 import Availability from "../models/availability.js";
-import { errorLogger } from "../middleware/log.js";
+import { authMiddleware } from "../middleware/auth.js";
 
 const router = express.Router();
 
-router.post("/availability", errorLogger, async (req, res) => {
+router.post("/add", authMiddleware, async (req, res) => {
     try {
-        const { userId, timeZone, availability } = req.body;
+        const { availability, timeZone } = req.body;
+        const userId = req.user.id; // Assuming authMiddleware attaches user info
 
-        // Check if the user's availability already exists
-        const existingAvailability = await Availability.findOne({ userId });
+        if (!availability || !timeZone) {
+            return res.status(400).json({ message: "Availability and timezone are required." });
+        }
 
-        if (existingAvailability) {
-            existingAvailability.timeZone = timeZone;
-            existingAvailability.availability = availability;
-            await existingAvailability.save();
-            return res.status(200).json({ message: "Availability updated successfully!" });
+        let userAvailability = await Availability.findOne({ userId });
+
+        if (userAvailability) {
+            // Update existing record
+            userAvailability.availability = availability;
+            userAvailability.timeZone = timeZone;
+            await userAvailability.save();
+            return res.status(200).json({ message: "Availability updated successfully", userAvailability });
         } else {
-            const newAvailability = new Availability({
+            // Create new record
+            userAvailability = new Availability({
                 userId,
                 timeZone,
                 availability
             });
-            await newAvailability.save();
-            res.status(200).json({ message: "Availability set successfully!" });
+            await userAvailability.save();
+            return res.status(201).json({ message: "Availability added successfully", userAvailability });
         }
-    } catch (error) {
-        errorLogger(error, req, res);
+    } catch (err) {
+        console.error("Error adding/updating availability:", err);
+        errorLogger(err, req, res);
     }
 });
+
 
 export default router;

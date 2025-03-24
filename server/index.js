@@ -6,7 +6,7 @@ import jwt from "jsonwebtoken";
 import mongoose from "mongoose";
 import booking from "./routes/booking.js";
 import user from "./routes/user.js";
-import userAvailability from "./routes/userAvailability.js";
+import availabilityRoutes from "./routes/userAvailability.js";
 import log from "./middleware/log.js";
 import { errorLogger } from "./middleware/log.js";
 
@@ -23,6 +23,7 @@ app.use(log);
 app.use(errorLogger);
 app.use('/api/user', user);
 app.use('/api/booking', booking);
+app.use('/api/availability', availabilityRoutes);
 
 const connectDB = async () => {
     try {
