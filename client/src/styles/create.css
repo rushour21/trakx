@@ -1,0 +1,55 @@
+.main-container{
+    width: 100%;
+}
+
+.eventform{
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+.booking-form {
+    width: 80%; /* Adjust form width */
+    padding: 20px;
+    background-color: gray;
+}
+
+.form-group input{
+    width:250px;
+}
+.date-time-inputs{
+  width: 250px;
+}
+.eventform h2{
+    color: #1877F2;
+}
+ 
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  button[type="button"] {
+    background: #ccc;
+  }
+  
+  button[type="button"]:hover {
+    background: #999;
+  }
+  

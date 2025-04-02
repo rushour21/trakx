@@ -20,7 +20,8 @@ const user = new mongoose.Schema({
     },
     userName: {
         type: String,
-        unique: true
+        unique: true,
+        sparse: true
     },
     preference: {
         type: String,

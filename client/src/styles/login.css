@@ -4,6 +4,7 @@
 }
 .mainContainer{
     display: flex;
+    background-color: white;
 }
 .containerLeft{
     width: 63vw;
@@ -44,6 +45,7 @@
     height: 40px;
     color: #A8AAA2;
     background-color: #E0E2D9;
+    cursor: pointer;
 }
 .containerLeft p {
     margin-top: 60px;

@@ -1,0 +1,42 @@
+.profileContainer{
+    margin-top: 10px;
+    background-color: white;
+    height: 80vh;
+    width: 94%;
+    margin-left: auto;
+    margin-right:auto ;
+    border-radius: 25px;
+}
+.edit {
+    display: flex;
+    border-bottom: 2px solid grey;
+    height: 40px;
+    align-items:end;
+    padding-left: 40px;
+    color: #0056b3;
+}
+.edit p {
+    border-bottom: 2px solid #0056b3 ;
+}
+.edit-form{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #5E5E5E;
+}
+.edit-form input{
+    margin-bottom: 20px;
+    width: 35%;
+    font-size: small;
+    font-weight: 200;
+}
+.edit-form button{
+    width: 120px;
+    margin-right: 20px;
+    margin-left: auto;
+    border-radius: 7px;
+    background-color: #0056b3;
+    color: white;
+}

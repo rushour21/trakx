@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import axios from "axios";
 import Sideimg from '../assets/Frame.png'
 import Logo from '../assets/logo.png'
+
 import '../styles/register.css'
 
 
@@ -14,9 +17,34 @@ export default function register() {
         confirmPassword : "",
 
     })
-    const handleSubmit = async (event) =>{
-        event.preventDefault()
+
+    const navigate = useNavigate(); 
+  // Handle form submission
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+        const res = await axios.post(
+            `${import.meta.env.VITE_API_URL}/api/user/register`,
+            formData,
+            { headers: { "Content-Type": "application/json" } }
+        );
+        console.log("Full Response:", res); // Debug: Log full response
+        console.log("User ID:", res.data?.userId); // Log user ID
+        alert("Registration successful");
+
+        if (res.data?.userId) {
+            localStorage.setItem("userId", res.data.userId);
+            navigate('/preference');
+        } else {
+            console.error("User ID not found in response");
+            alert("Registration failed: User ID not received");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert(`Registration failed: ${error.response?.data?.message || "Unknown error"}`);
     }
+  };
+
   return (
     <div className='mainContainer_r'>
         <div className='containerLeft_r'>
@@ -27,7 +55,7 @@ export default function register() {
                 <input className='input' onChange={(event) =>setFormdata((prev) => {
                     return{
                         ...prev,
-                        FirstName : event.target.value
+                        firstname : event.target.value
                     }
                 })} value={formData.firstname} type="text"/>
                 </label>
@@ -36,7 +64,7 @@ export default function register() {
                     <input className='input' onChange={(event) =>setFormdata((prev) => {
                     return{
                         ...prev,
-                        LastName : event.target.value
+                        lastname : event.target.value
                     }
                 })} value={formData.lastname} type="text"/>
                 </label>
@@ -45,7 +73,7 @@ export default function register() {
                 <input className='input' onChange={(event) =>setFormdata((prev) => {
                     return{
                         ...prev,
-                        Email : event.target.value
+                        email : event.target.value
                     }
                 })} value={formData.email} type="text" />
                 </label>
@@ -54,7 +82,7 @@ export default function register() {
                 <input className='input' onChange={(event) =>setFormdata((prev) => {
                     return{
                         ...prev,
-                        Password : event.target.value
+                        password : event.target.value
                     }
                 })} value={formData.password} type="text"/>
                 </label>
@@ -63,7 +91,7 @@ export default function register() {
                 <input className='input' onChange={(event) =>setFormdata((prev) => {
                     return{
                         ...prev,
-                        Mobile : event.target.value
+                        confirmPassword : event.target.value
                     }
                 })} value={formData.confirmPassword} type="text" />
                 </label>

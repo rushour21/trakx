@@ -1,0 +1,71 @@
+.past-list{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 50px;
+    gap: 20px;
+    margin-top: 20px;
+    height: 90%;
+}
+.past-card{
+    display: flex;
+    justify-content:space-around;
+    width: 90%;
+    font-size: 13px;
+    gap: 80px;
+}
+.people{
+    font-size: 11px;
+}
+.d-time{
+    color: #1877F2;
+    font-size: 11px;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.reject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 27px;
+    border-radius: 9px;
+    background-color: #ED0000;
+    border: none;
+    cursor: pointer;
+}
+.accept{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 27px;
+    border-radius: 9px;
+    background-color: #00C35F;
+    border: none;
+    cursor: pointer;
+}
+.status-acc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #F3F3F1;
+    width: 100px;
+    height: 27px;
+    border-radius: 9px;
+    border: 1px solid #00000033;
+}
+.status-rej{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #616161;
+    width: 100px;
+    height: 27px;
+    border-radius: 9px;
+    border: 1px solid #00000033;
+}

@@ -1,60 +1,88 @@
-
 import React, { useState } from 'react'
+import axios from "axios";
 import Sideimg from '../assets/Frame.png'
 import Logo from '../assets/logo.png'
 import  '../styles/preference.css'
 
 export default function Login() {
-    const [username, setUsername] = useState("");
-    const [selectedCategory, setSelectedCategory] = useState(null);
+  const [username, setUsername] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const categories = [
-        { name: "Sales", icon: "🏢" },
-        { name: "Finance", icon: "💼" },
-        { name: "Consulting", icon: "📄" },
-        { name: "Tech", icon: "💻" },
-        { name: "Education", icon: "📚" },
-        { name: "Government & Politics", icon: "⚖️" },
-        { name: "Recruiting", icon: "📊" },
-        { name: "Marketing", icon: "🚀" },
+  const categories = [
+    { name: "Sales", icon: "🏢" },
+    { name: "Finance", icon: "💼" },
+    { name: "Consulting", icon: "📄" },
+    { name: "Tech", icon: "💻" },
+    { name: "Education", icon: "📚" },
+    { name: "Government & Politics", icon: "⚖️" },
+    { name: "Recruiting", icon: "📊" },
+    { name: "Marketing", icon: "🚀" },
   ];
-        const handleSubmit = async (event) =>{
-            event.preventDefault()
-        }
+ 
+  const handleClick = async () => {
+    if (!username || !selectedCategory) return;
+  
+    setIsSubmitting(true);
+    
+    let userId;
+    try {
+      userId = localStorage.getItem("userId");
+      if (!userId) throw new Error("User ID not found in local storage.");
+    } catch (error) {
+      alert("Failed to retrieve user ID. Please log in again.");
+      setIsSubmitting(false);
+      return;
+    }
+  
+    const apiUrl = `${import.meta.env.VITE_API_URL}/api/user/preference/${userId}`;
+    console.log("API URL:", apiUrl);
+  
+    try {
+      const response = await axios.post(
+        apiUrl,
+        { username, preference : selectedCategory },
+        { headers: { 'Content-Type': 'application/json' } }
+      );
+  
+      alert('Preferences saved successfully!');
+      console.log("Server Response:", response.data);
+    } catch (error) {
+      console.error("Full error:", error);
+      const errorMessage = error.response?.data?.message || error.message || 'Unknown error';
+      alert(`Failed to save preferences: ${errorMessage}`);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
-    <div className='mainContainer'>
-        <div className='containerLeft'>
-                    <div className='logo'><img src={Logo} alt="" /></div>
-                    <div>
-                        <h1 >Your Preference</h1>
-
-                        <input type="text" placeholder="Tell us your username" value={username} 
-                        onChange={(e) => setUsername(e.target.value)} className=""/>
-                        
-                        <p className="">Select one category that best describes your CNNCT:</p>
-                        <div className="grid grid-cols-2 gap-2 mb-4">
-                            {categories.map((category) => (
-                                <button
-                                    key={category.name}
-                                    className={`flex items-center justify-center p-3 border rounded-lg transition-all text-sm font-medium ${
-                selectedCategory === category.name
-                  ? "bg-blue-600 text-white"
-                  : "bg-white text-gray-700 border-gray-300 hover:bg-gray-200"
-              }`}
-              onClick={() => setSelectedCategory(category.name)}
-            >
-              <span className="mr-2">{category.icon}</span> {category.name}
+    <div className='mainContainer_p'>
+      <div className='containerLeft_p'>
+        <div className='logo_p'><img src={Logo} alt="" /></div>
+        <div className='form_p'>
+            <h1 >Your Preference</h1>
+            <input className="input-field" type="text" placeholder="Tell us your username" value={username} 
+                onChange={(e) => setUsername(e.target.value)}/>
+            <p className=".category-text">Select one category that best describes your CNNCT:</p>
+            <div className="categories-grid">
+              {categories.map((category) => (
+              <button
+                key={category.name}
+                className={`category-btn ${selectedCategory === category.name ? "selected" : ""}`}
+                onClick={() => setSelectedCategory(category.name)}>
+              <span className="icon">{category.icon}</span> {category.name}
+              </button>
+              ))}
+            </div>
+            <button className="continue-btn" disabled={!username || !selectedCategory}
+            onClick={handleClick}>
+              Continue
             </button>
-          ))}
         </div>
-                        <button type='submit'>Log in</button>
-                        <p>Don't have an account? <a href="/register">Sign Up</a></p>
-                    </div>
-                   <p>This site is protected by reCAPTCHA and the <a href="#">Google Privacy Policy</a> and <a href="#">Terms of Service</a> apply. </p>
-                </div>
-        <div className='containerRight'>
+      </div>
+      <div className='containerRight'>
             <img src={Sideimg} alt="" />
-        </div>
+      </div>
     </div>
   )
 }

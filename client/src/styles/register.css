@@ -4,6 +4,7 @@
 }
 .mainContainer_r{
     display: flex;
+    background-color: white;
 }
 .containerLeft_r{
     width: 63vw;
@@ -60,6 +61,7 @@ form button{
     border-radius: 30px;
     border: 0;
     background-color: #C3C3C3;
+    cursor: pointer;
 }
 .containerLeft_r p {
     margin-top: 30px;

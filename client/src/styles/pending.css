@@ -1,0 +1,28 @@
+.pending-list{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 50px;
+    gap: 20px;
+    margin-top: 20px;
+    height: 90%;
+}
+.pending-card{
+    display: flex;
+    justify-content:start;
+    width: 90%;
+    font-size: 13px;
+    gap: 80px;
+}
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.people{
+    font-size: 11px;
+}
+.d-time{
+    color: #1877F2;
+    font-size: 11px;
+}

@@ -1,0 +1,57 @@
+.card-container{
+    margin-top: 10px;
+    height: 70vh;
+    width: 94%;
+    margin-left: auto;
+    margin-right:auto ;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    overflow-y: scroll;
+}
+.booking-card{
+    background-color: #1877F2;
+    width: 280px;
+    height: 25vh;
+    border-radius: 15px;
+    overflow: none ;
+    font-size: 13px;
+    color: #454545;
+}
+.card-content{
+    margin-top: 15px;
+    width: 280px;
+    height: 100%;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.banner-title{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding-top: 10px;
+}
+.info{
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.date{
+    font-size: 10px;
+}
+.time{
+    font-size: 10px;
+    color: #1877F2;
+}
+.duration{
+    font-size: 8px;
+}
+.footer{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 15px;
+    margin-top: 10px;
+    gap: 15px;
+}

@@ -1,4 +1,6 @@
 .env
+*.env
 *.log
 logs/
+*.log
 logs/** 

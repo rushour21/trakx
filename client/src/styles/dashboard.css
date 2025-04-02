@@ -1,0 +1,15 @@
+*{
+margin: 0;
+padding: 0;
+}
+.dashboard-layout {
+    display: flex;
+    height: 100vh; /* Full screen height */
+    background-color: #E0E0E0;
+  }
+.dashboard-content{
+    margin-left: 15vw;
+    padding: 20px;
+    width: 85vw;
+    height: 90vh;
+}

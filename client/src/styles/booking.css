@@ -1,0 +1,27 @@
+.booking-container{
+  margin-top: 10px;
+    background-color: white;
+    height: 80vh;
+    width: 94%;
+    margin-left: auto;
+    margin-right:auto ;
+    border-radius: 25px;
+    border: 2px solid grey;
+  }
+.navbar-menu{
+  display: flex;
+  border-bottom: 2px solid grey;
+  height: 40px;
+  align-items: center;
+  gap: 40px;
+  padding-left: 40px;
+  text-decoration: none;
+}
+.navbar-menu-item{
+  text-decoration: none;
+  color: black;
+}
+.selected-booking{
+  height: 85%;
+  overflow-y: scroll;
+}
