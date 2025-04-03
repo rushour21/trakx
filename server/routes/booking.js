@@ -201,5 +201,31 @@ router.put("/past/:meetingId", authMiddleware, async (req, res) => {
     }
 });
 
+router.put("/pending/updateStatus", authMiddleware, async (req, res) => {
+    
+    try {
+        const { status, bookingId } = req.body;
+        const userEmail = req.user.email;
+        console.log(req.body)
+        console.log(userEmail)
+        if (!status || (status !== 'accepted' && status !== 'rejected')) {
+            return res.status(400).json({ error: 'Invalid status value. Must be "accepted" or "rejected".' });
+        }
 
+        // Use findOneAndUpdate to directly update the status of a specific participant
+        const meeting = await Meeting.findOneAndUpdate(
+            { _id: bookingId, "participants.email": userEmail },
+            { $set: { "participants.$.status": status } }, // Update the participant's status
+            { new: true } // Return the updated document
+        );
+        if (!meeting) {
+            return res.status(404).json({ error: "Meeting not found or user not a participant" });
+        }
+
+        res.status(200).json({ message: "Status updated successfully", meeting });
+    } catch (error) {
+        console.error("Error updating meeting status:", error);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+});
 export default router;

@@ -1,0 +1,48 @@
+.container-m{
+    background-color: white;
+    width: 40%;
+    height: 75vh;
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-size: small;
+}
+.form-header{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding-left: 25px;
+    height: 15%;
+    border-bottom: 1px solid gray;
+    
+}
+.content p{
+    margin: 15px;
+}
+.schedule-list{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 330px;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+.day-row{
+    display: flex;
+    justify-content: space-around;
+}
+.unavailable, .time-slots{
+    width: 175px;
+    text-align: center;
+}
+.time-slot > input{
+width: 67px;
+}
+.time-slot{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.time-slot-actions{
+    display: flex;
+    gap: 5px;
+}

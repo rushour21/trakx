@@ -19,9 +19,12 @@ const Pending = lazy(() => import('./component/bookingComponent/pending.jsx'));
 const Cancelled = lazy(() => import('./component/bookingComponent/canceled.jsx'));
 const Past = lazy(() => import('./component/bookingComponent/past.jsx'));
 
+//availability subrouts
+const AvailabilityView = lazy(() => import('./component/availabilityComponent/availabilityView.jsx'));
+const CalendarView = lazy(() => import('./component/availabilityComponent/calenderView.jsx'));
+
 // Loading fallback component
 const LoadingFallback = () => <div>Loading...</div>;
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -35,81 +38,26 @@ createRoot(document.getElementById('root')).render(
         {/* Dashboard with Nested Routes */}
         <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<Navigate to="event" />} /> {/* Default to Event */}
-          <Route
-            path="event"
-            element={
-              <Suspense fallback={<LoadingFallback />}>
-                <Event />
-              </Suspense>
-            }
-          />
+          <Route path="event" element={<Suspense fallback={<LoadingFallback />}><Event /></Suspense>}/>
+
            {/* Booking with Nested Routes */}
-           <Route
-            path="booking"
-            element={
-              <Suspense fallback={<LoadingFallback />}>
-                <Booking />
-              </Suspense>
-            }
-          >
+           <Route path="booking" element={<Suspense fallback={<LoadingFallback />}><Booking /></Suspense>}>
             <Route index element={<Navigate to="upcoming" />} />
-            <Route
-              path="upcoming"
-              element={
-                <Suspense fallback={<LoadingFallback />}>
-                  <Upcoming />
-                </Suspense>
-              }
-            />
-            <Route
-              path="pending"
-              element={
-                <Suspense fallback={<LoadingFallback />}>
-                  <Pending />
-                </Suspense>
-              }
-            />
-            <Route
-              path="cancelled"
-              element={
-                <Suspense fallback={<LoadingFallback />}>
-                  <Cancelled />
-                </Suspense>
-              }
-            />
-            <Route
-              path="past"
-              element={
-                <Suspense fallback={<LoadingFallback />}>
-                  <Past />
-                </Suspense>
-              }
-            />
-          </Route>          
-          <Route
-            path="availability"
-            element={
-              <Suspense fallback={<LoadingFallback />}>
-                <Availability />
-              </Suspense>
-            }
-          />
-          <Route
-            path="settings"
-            element={
-              <Suspense fallback={<LoadingFallback />}>
-                <Settings />
-              </Suspense>
-            }
-          />
-          <Route
-            path="create"
-            element={
-              <Suspense fallback={<LoadingFallback />}>
-                <Create />
-              </Suspense>
-            }
-          />
+            <Route path="upcoming" element={<Suspense fallback={<LoadingFallback />}><Upcoming /></Suspense>}/>
+            <Route path="pending" element={<Suspense fallback={<LoadingFallback />}><Pending /></Suspense>}/>
+            <Route path="cancelled" element={<Suspense fallback={<LoadingFallback />}><Cancelled /></Suspense>}/>
+            <Route path="past" element={<Suspense fallback={<LoadingFallback />}><Past /></Suspense>}/>
+          </Route>
+
+          <Route path="availability" element={<Suspense fallback={<LoadingFallback />}><Availability /></Suspense>}>
+            <Route index element={<Navigate to="availabilityView" />} />
+            <Route path="availabilityView" element={<Suspense fallback={<LoadingFallback />}><AvailabilityView /></Suspense>} />
+            <Route path="calenderView" element={<Suspense fallback={<LoadingFallback />}><CalendarView /></Suspense>} />
+          </Route>
+
+
+          <Route path="settings" element={<Suspense fallback={<LoadingFallback />}> <Settings /></Suspense>}/>
+          <Route path="create" element={<Suspense fallback={<LoadingFallback />}><Create /></Suspense>}/>
         </Route>
 
       </Routes>
