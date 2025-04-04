@@ -6,11 +6,11 @@ import Meeting  from "../models/bookings.js";
 import user from "../models/users.js"
 const router = express.Router();
 
-router.post("/bookingr", authMiddleware,availabilityMiddleware, async (req, res) => {
+router.post("/bookingr", authMiddleware, availabilityMiddleware,  async (req, res) => {
     try {
             console.log("Authenticated User email:", req.user.email); // Debugging l
-
-        const { eventTopic, password, hostName, description, dateTime, duration, timezone,bannerTitle, bannerColor, meetingLink, allowedUser,  } = req.body;
+            console.log(req.body)
+        const { eventTopic, password, hostName, description, dateTime, duration, timeZone,bannerTitle, bannerColor, meetingLink, allowedUser, date, time } = req.body;
         console.log("added mails",allowedUser)
          // Ensure allowedUser is formatted correctly and includes the creator's email
          const allUsers = [...new Set([...allowedUser.split(","), req.user.email])]
@@ -26,7 +26,7 @@ router.post("/bookingr", authMiddleware,availabilityMiddleware, async (req, res)
           fullName, // Store full name
           email,
           status: "pending",
-          role: email === req.user.email ? "creator" : "invitor",
+          role: email === req.user.email ? "creator" : "participant",
         };
       });
 
@@ -36,8 +36,10 @@ router.post("/bookingr", authMiddleware,availabilityMiddleware, async (req, res)
             hostName,
             description,
             dateTime,
+            date,
+            time,
             duration,
-            timezone,
+            timeZone,
             bannerTitle,
             bannerColor,
             meetingLink,

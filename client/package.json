@@ -21,6 +21,8 @@
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.55.0",
     "react-router-dom": "^7.3.0",
+    "react-select": "^5.10.1",
+    "react-timezone-select": "^3.2.8",
     "yup": "^1.6.1"
   },
   "devDependencies": {

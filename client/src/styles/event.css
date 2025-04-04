@@ -6,8 +6,9 @@
     margin-right:auto ;
     border-radius: 25px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     padding: 30px;
+    gap: 30px;
     overflow-y: scroll;
 }
 .booking-card{
@@ -55,3 +56,4 @@
     margin-top: 10px;
     gap: 15px;
 }
+

@@ -2,27 +2,31 @@ import UserAvailability from "../models/availability.js";
 
 export const availabilityMiddleware = async (req, res, next) => {
     try {
-        const { dateTime, duration } = req.body;  // Extract meeting date and duration
-        const userId = req.user.id;  // Get the user ID from authentication middleware
+        const { date, time, duration } = req.body;  // Now we get `date` and `time` separately
+        const userId = req.user.id;
 
-        // Convert dateTime to a Date object
-        const meetingStart = new Date(dateTime);
-        const meetingEnd = new Date(meetingStart.getTime() + duration * 60000);  // Add duration in minutes
+        console.log(req.body);
 
-        // Extract the day of the week (e.g., "Monday")
+        // Combine date and time into a Date object
+        const dateTimeString = `${date}T${time}:00`;  // e.g., "2025-04-21T09:00:00"
+        const meetingStart = new Date(dateTimeString);
+
+        if (isNaN(meetingStart)) {
+            return res.status(400).json({ error: "Invalid date or time format." });
+        }
+
+        const meetingEnd = new Date(meetingStart.getTime() + duration * 60000);
+
         const meetingDay = meetingStart.toLocaleDateString("en-US", { weekday: "long" });
 
-        // Fetch user availability from DB
         const userAvailability = await UserAvailability.findOne({ userId });
 
         if (!userAvailability) {
             return res.status(400).json({ error: "User availability not set. Please update your availability." });
         }
 
-        // Get available slots for the meeting day
         const availableSlots = userAvailability.availability[meetingDay] || [];
 
-        // Check if the meeting falls within any available slot
         const isAvailable = availableSlots.some(slot => {
             const slotStart = convertToDateTime(meetingStart, slot.startTime);
             const slotEnd = convertToDateTime(meetingStart, slot.endTime);
@@ -30,18 +34,24 @@ export const availabilityMiddleware = async (req, res, next) => {
             return meetingStart >= slotStart && meetingEnd <= slotEnd;
         });
 
+        console.log(isAvailable);
+
         if (!isAvailable) {
-            return res.status(400).json({ error: `You are not available on ${meetingDay} at this time.` });
+            return res.status(400).json({
+                error: `You are not available on ${meetingDay} at this time.`,
+                alert: "User not available",
+                message: "not available at this time"
+            });
         }
 
-        next(); // Proceed to the next middleware if available
+        next();
     } catch (err) {
-        console.error("Error in checkAvailabilityMiddleware:", err);
+        console.error("Error in availabilityMiddleware:", err);
         res.status(500).json({ error: "Internal server error" });
     }
 };
 
-// Helper function to convert "HH:MM" string to Date object
+// Helper: Convert "HH:MM" to Date object on same day as referenceDate
 const convertToDateTime = (referenceDate, timeString) => {
     const [hours, minutes] = timeString.split(":").map(Number);
     const newDate = new Date(referenceDate);

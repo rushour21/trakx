@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import Sideimg from '../assets/Frame.png'
 import Logo from '../assets/logo.png'
@@ -8,6 +9,8 @@ export default function Login() {
   const [username, setUsername] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const navigate = useNavigate(); 
 
   const categories = [
     { name: "Sales", icon: "🏢" },
@@ -47,6 +50,7 @@ export default function Login() {
   
       alert('Preferences saved successfully!');
       console.log("Server Response:", response.data);
+      navigate('/dashboard');
     } catch (error) {
       console.error("Full error:", error);
       const errorMessage = error.response?.data?.message || error.message || 'Unknown error';

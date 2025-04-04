@@ -50,7 +50,7 @@ export default function register() {
         <div className='containerLeft_r'>
             <div className='logo'><img src={Logo} alt="" /></div>
             <form onSubmit={handleSubmit}>
-                <div><span className='formTitle'>Create an account</span><a href="#">Sign in instead</a></div>
+                <div><span className='formTitle'>Create an account</span><a href="/login">Sign in instead</a></div>
                 <label>Firstname
                 <input className='input' onChange={(event) =>setFormdata((prev) => {
                     return{

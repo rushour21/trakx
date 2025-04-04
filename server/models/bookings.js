@@ -20,11 +20,17 @@ const meeting = new mongoose.Schema({
         type: Date,
         required: true
     },
+    date: {
+        type: String,
+    },
+    time: {
+        type: String,
+    },
     duration: {
         type: String,
         required: true
     },
-    timezone: {
+    timeZone: {
         type: String,
         required: true
     },

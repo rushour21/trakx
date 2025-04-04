@@ -5,6 +5,8 @@ import Login from './pages/login.jsx';
 import Register from './pages/register.jsx';
 import Dashboard from './pages/dashboard.jsx';
 import Preference from './pages/preference.jsx';
+import Home from './pages/home.jsx'
+import ProtectedRoute from './component/protectedRoute.jsx'
 import './index.css';
 
 const Event = lazy(() => import('./component/event.jsx'));
@@ -30,13 +32,13 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Login />} />
+        <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/preference' element={<Preference />} />
 
         {/* Dashboard with Nested Routes */}
-        <Route path="/dashboard" element={<Dashboard />}>
+        <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>}>
           <Route index element={<Navigate to="event" />} /> {/* Default to Event */}
           <Route path="event" element={<Suspense fallback={<LoadingFallback />}><Event /></Suspense>}/>
 

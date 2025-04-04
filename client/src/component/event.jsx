@@ -98,6 +98,7 @@ export default function Event() {
       <div className="header">
         <h2>Event Types</h2>
         <p>Create events to share for people to book on your calendar. <br />New</p>
+        <button onClick={9()} className='create-button'>+ Add ne event</button>
       </div>
       <div className='card-container'>
         {bookings.map ((booking) => {
