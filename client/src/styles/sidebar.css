@@ -1,5 +1,5 @@
 .sidebar {
-    width: 15vw;
+    width: 16vw;
     height: 100vh;
     background-color:white;
     position: fixed;
@@ -21,12 +21,15 @@
     text-decoration: none;
     padding: 15px;
     color: #676767;
-    width: 100%;
-    display: block;
+    /*display: block;*/
     border-radius: 5px;
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.active-item{
+    background-color: #F3F3F1;
+    color: #1877F2;
 }
 .menu-create{
     width: 130px;
@@ -41,7 +44,10 @@
     margin-left: 15px;
     margin-top: 10px;
 }
-  
+.active-create {
+    color: white;
+    background-color: #1877F2;
+}
 .menu-item:hover {
     cursor: pointer;
 }
@@ -57,7 +63,30 @@
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 .initial p{
     display: flex;
 }
+.log-out{
+    width: 50%;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+    left: 75px;
+    height: 38px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #F3F3F1;
+    box-shadow: 0px 4px 14.7px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    
+  }

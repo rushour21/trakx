@@ -1,12 +1,16 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { useEffect, useState, useRef} from 'react'
 import { Trash2, PencilLine, Copy } from 'lucide-react';
 import axios from 'axios';
 import "../styles/event.css"
+import { toast } from 'react-toastify';
 
 export default function Event() {
   const [bookings, setBookings] = useState([]);
+  const [toggles, setToggles] = useState({});
   const fetched = useRef(false); //Prevents duplicate API calls
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (fetched.current) return; //Prevents second call
@@ -61,7 +65,7 @@ export default function Event() {
       // Copy the meeting link to the clipboard
       navigator.clipboard.writeText(meetingLink).then(() => {
         // Optionally, alert the user that the link was copied
-        alert('Meeting link copied to clipboard!');
+        toast.success('Copied to clipboard');
       }).catch((err) => {
         console.error('Error copying text: ', err);
       });
@@ -86,11 +90,18 @@ export default function Event() {
         setBookings((prevBookings) =>
           prevBookings.filter((booking) => booking._id !== bookingId)
         );
-        alert('Meeting deleted successfully!');
+        toast.success('Meeting deleted successfully!');
       } catch (error) {
         console.error("Error deleting the event:", error);
         alert('Failed to delete the meeting');
       }
+    };
+
+    const handleToggleChange = (bookingId) => {
+      setToggles((prev) => ({
+        ...prev,
+        [bookingId]: !prev[bookingId],
+      }));
     };
 
   return (
@@ -98,17 +109,18 @@ export default function Event() {
       <div className="header">
         <h2>Event Types</h2>
         <p>Create events to share for people to book on your calendar. <br />New</p>
-        <button onClick={9()} className='create-button'>+ Add ne event</button>
+        <button className='create-button' onClick={() => navigate('/dashboard/create')} >+ Add ne event</button>
       </div>
       <div className='card-container'>
-        {bookings.map ((booking) => {
+        {bookings.map ((booking, index) => {
           const { formattedDate, formattedTime, startDate } = formatDate(booking.dateTime);
           const endTime = calculateEndTime(startDate, booking.duration);
 
           const meetingLink = booking.formData?.meetingLink;
+          const toggleId = `toggle-${index}`;
 
           return(
-          <div key={booking._id} className='booking-card'>
+          <div key={booking._id} className={`booking-card ${toggles[booking._id] ? 'gray-bg' : 'booking-card'}`}>
             <div className='card-content'>
               <div className='banner-title'>{booking.bannerTitle}<PencilLine size={18}/> </div>
               
@@ -119,6 +131,14 @@ export default function Event() {
               </div>
               <hr />
               <div className='footer'>
+              <input
+                    id={toggleId}
+                    type="checkbox"
+                    className='toggle-input'
+                    checked={toggles[booking._id] || false}
+                    onChange={() => handleToggleChange(booking._id)}
+                  />
+                <label htmlFor={toggleId} className='toggle-label'></label>
                 <Copy size={18} onClick={() => handleCopy(meetingLink)}/>
                 <Trash2 size={18} onClick={() => handleDelete(booking._id)}/>
               </div>

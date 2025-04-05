@@ -47,9 +47,29 @@
     background-color: #E0E2D9;
     cursor: pointer;
 }
-.containerLeft p {
+.des {
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     font-size: 12px;
+}
+@media (max-width: 768px) {
+    .containerRight {
+        display: none;
+    }
+    .containerLeft{
+        width: 100vw;
+    }
+    .containerLeft form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 15px;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .des{
+        display: none;
+    }
+
 }

@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import {Ban, Check, Users, CircleUser } from 'lucide-react';
 import axios from "axios";
 import  '../../styles/pending.css'
+import { toast } from 'react-toastify';
 
 export default function pending() {
   const [showPopup, setShowPopup] = useState(false);
@@ -83,7 +84,7 @@ export default function pending() {
       );
   
       if (response.status === 200) {
-        alert(`Booking ${status} successfully!`);
+        toast.info(`Booking ${status}`);
         
         // Update UI by filtering out the updated booking
         setBookings((prev) =>

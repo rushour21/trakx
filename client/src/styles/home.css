@@ -38,7 +38,6 @@
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 3vw;
-    width: 8vw;
 }
 .screen-img{
     width: 60%;
@@ -49,18 +48,18 @@
 .h-info{
     width: 70vw;
     display: flex;
+    gap: 1vw;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.info-content{
-    margin-left: 5vw;   
-}
+
 .info-content ul{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 .comb-img{
-    width: 50%;
+    width: 40%;
     margin: auto;
     text-align: right;
     position: relative;
@@ -166,4 +165,44 @@
     cursor: pointer;
 }
 
-
+@media (max-width: 768px) {
+    .home-header{
+        width: 100vw;
+        height: 8vh;
+    }
+    .signup-button{
+        width: 25vw;
+    }
+    .screen-img{
+        width: 80%;
+    }
+    .comb-img{
+        width: 80vw;
+        position: relative;
+    }
+    .app-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        width: 70vw;
+    }
+    .review-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    .f1{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 70px;
+        margin-top: 20px 
+    }
+    .h-footer{
+        height: 500px;
+    }
+    .h-bottom p{
+        display: none;
+    }
+}

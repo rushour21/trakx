@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import '../styles/setting.css'
+import { toast } from 'react-toastify';
 
 export default function setting() {
 
@@ -46,10 +47,10 @@ export default function setting() {
                 }
             });
               console.log("Full Response:", res);
-              alert("Profile updated successfully!");
+              toast.success("Profile updated successfully!");
           } catch (error) {
             console.error("Error updating profile:", error.response ? error.response.data : error.message);
-              alert("Failed to update profile. Please try again.");
+              toast.error("Failed to save");
           }
         }
   return (

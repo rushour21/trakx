@@ -1,0 +1,63 @@
+.calendar-wrapper {
+    margin: 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    background-color: white;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+  }
+  
+  .calendar-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .left-controls span,
+  .center-controls span {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .right-controls input {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .rbc-time-view .rbc-time-header {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .rbc-event {
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .calendar-header {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  
+    .right-controls {
+      width: 100%;
+    }
+  
+    .right-controls input {
+      width: 100%;
+    }
+  }
+  

@@ -9,11 +9,16 @@
     margin-top:10px;
     border-radius: 5px;
     font-size: 12px;
+    
 }
 .navbar-menu-item{
     text-decoration: none;
     color: #5d5d5d;
     display: flex;
     justify-content: center;
+    border-radius: 2px;
 }
+.active-it{
+    background-color: white;
 
+}

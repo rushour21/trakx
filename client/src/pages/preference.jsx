@@ -4,6 +4,7 @@ import axios from "axios";
 import Sideimg from '../assets/Frame.png'
 import Logo from '../assets/logo.png'
 import  '../styles/preference.css'
+import { toast } from 'react-toastify';
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -48,13 +49,13 @@ export default function Login() {
         { headers: { 'Content-Type': 'application/json' } }
       );
   
-      alert('Preferences saved successfully!');
+      toast.success("Saved now ")
       console.log("Server Response:", response.data);
       navigate('/dashboard');
     } catch (error) {
       console.error("Full error:", error);
       const errorMessage = error.response?.data?.message || error.message || 'Unknown error';
-      alert(`Failed to save preferences: ${errorMessage}`);
+      toast.error("Failed to save");
     } finally {
       setIsSubmitting(false);
     }

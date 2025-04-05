@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import Sideimg from '../assets/Frame.png'
 import Logo from '../assets/logo.png'
@@ -21,13 +23,13 @@ export default function Login() {
                     { headers: { "Content-Type": "application/json" } }
                 );
         
-                alert("login successful");
+                toast.success("login successful");
                 const token = res.data.token;
                 localStorage.setItem("authToken", token);
                 navigate('/dashboard'); // Store in localStorage
             } catch (error) {
                 console.error("Error:", error);
-                alert(`login failed: ${error.response?.data?.message || "Unknown error"}`);
+                toast.error("login failed");
             }
           };
   return (
@@ -54,7 +56,7 @@ export default function Login() {
                         <button type='submit'>Log in</button>
                         <p>Don't have an account? <a href="/register">Sign Up</a></p>
                     </form>
-                   <p>This site is protected by reCAPTCHA and the <a href="#">Google Privacy Policy</a> and <a href="#">Terms of Service</a> apply. </p>
+                   <p className='des'>This site is protected by reCAPTCHA and the <a href="#">Google Privacy Policy</a> and <a href="#">Terms of Service</a> apply. </p>
                 </div>
         <div className='containerRight'>
             <img src={Sideimg} alt="" />

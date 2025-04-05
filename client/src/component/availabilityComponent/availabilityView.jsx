@@ -85,7 +85,7 @@ export default function AvailabilityView() {
         <div className='container-m'>
             <div className='form-header'>
                 <p>Activity</p>
-                <div className='timezone'>
+                <div className='timezone-rr'>
                     <p>TimeZone</p>
                     <a href="#">{timezone}</a>
                 </div>

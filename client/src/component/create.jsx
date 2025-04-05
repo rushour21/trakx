@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect   } from "react";
+import { useLocation } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import iconpic from '../assets/profileicon.png'
 import TimezoneSelect from "react-timezone-select";
-import { PencilLine} from 'lucide-react';
+import { PencilLine, Pointer} from 'lucide-react';
 import '../styles/create.css';
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const BookingForm = () => {
    const [selectedTimezone, setSelectedTimezone] = useState(Intl.DateTimeFormat().resolvedOptions().timeZone);
@@ -12,6 +14,17 @@ const BookingForm = () => {
    const { register, handleSubmit, setValue, getValues } = useForm();
    const [editable, setEditable] = useState(false)
   const [step, setStep] = useState(1);
+  const location = useLocation();
+  const inputRef = useRef(null);
+  const usersName = location.state?.userName;
+  console.log(usersName)
+  console.log(location.state?.userName)
+
+  useEffect(() => {
+    if (editable && inputRef.current) {
+      inputRef.current.select();
+    }
+  }, [editable]);
 
    // Function to format date and time into ISO 8601 format
    const formatDateTime = (date, time) => {
@@ -64,10 +77,10 @@ const BookingForm = () => {
           } }
       );
       console.log("Full Response:", res);
-        alert("meeting created");
+        toast.success("successfully added shop ");
     } catch (error) {
       console.error("Error submitting data:", error);
-    alert("not available at this time");
+    toast.error("You are not available at this time");
     }
 
   };
@@ -101,7 +114,7 @@ const BookingForm = () => {
 
             <div className="form-group">
               <label>Host Name *</label>
-              <input type="text" placeholder="Sarthak Pal" {...register("hostName")} />
+              <input type="text" value={usersName} {...register("hostName")} />
             </div>
 
             <div className="form-group">
@@ -141,8 +154,12 @@ const BookingForm = () => {
               <p>Banner</p>
               <div className="baner">
                 <img src={iconpic} />
-                <PencilLine size={18} color={'white'} className="pencile" onClick={() => setEditable(true)}/>
-                <input type="text"  value={editable ? undefined : "Team A Meeting-1"} {...register("bannerTitle")}/>
+                <PencilLine size={18} style={{ cursor: "pointer" }} color={'white'} className="pencile" onClick={() => setEditable(true)}/>
+                <input type="text"  defaultValue="Team A Meeting-1" disabled={!editable} {...register("bannerTitle")}
+                    ref={(e) => {
+                      register("bannerTitle").ref(e); // link React Hook Form
+                      inputRef.current = e;           // also keep our own ref
+                    }}/>
               </div>
               <div className="colors">
                 <p>Custom Background Color</p>

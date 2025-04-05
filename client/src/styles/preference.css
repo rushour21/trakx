@@ -95,4 +95,26 @@
   .continue-btn:hover:not(:disabled) {
     background-color: #0056b3;
   }
+
+
+  @media (max-width: 768px) {
+    .containerRight {
+        display: none;
+    }
+    .containerLeft{
+        width: 100vw;
+    }
+    .containerLeft form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 15px;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .des{
+        display: none;
+    }
+
+}
   

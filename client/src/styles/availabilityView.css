@@ -46,3 +46,15 @@ width: 67px;
     display: flex;
     gap: 5px;
 }
+
+@media (max-width: 768px) {
+    .container-m{
+        background-color: white;
+        width: 90%;
+        height: 60vh;
+        border-radius: 20px;
+        border: 1px solid gray;
+        font-size: small;
+    }
+  }
+  

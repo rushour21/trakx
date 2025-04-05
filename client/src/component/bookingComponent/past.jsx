@@ -79,6 +79,7 @@ export default function past() {
 
         if (res.status === 200) {
             console.log("Status updated successfully", res.data);
+            toast.info(`Booking ${status}`);
 
             setBookings((prevBookings) =>
                 prevBookings.map((booking) =>

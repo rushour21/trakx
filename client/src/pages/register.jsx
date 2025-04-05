@@ -5,6 +5,7 @@ import Sideimg from '../assets/Frame.png'
 import Logo from '../assets/logo.png'
 
 import '../styles/register.css'
+import { toast } from 'react-toastify';
 
 
 export default function register() {
@@ -30,18 +31,18 @@ export default function register() {
         );
         console.log("Full Response:", res); // Debug: Log full response
         console.log("User ID:", res.data?.userId); // Log user ID
-        alert("Registration successful");
+        toast.success("Registration successful");
 
         if (res.data?.userId) {
             localStorage.setItem("userId", res.data.userId);
             navigate('/preference');
         } else {
             console.error("User ID not found in response");
-            alert("Registration failed: User ID not received");
+            toast.error("Registration failed");
         }
     } catch (error) {
         console.error("Error:", error);
-        alert(`Registration failed: ${error.response?.data?.message || "Unknown error"}`);
+        toast.error("Registration failed");
     }
   };
 
@@ -102,7 +103,7 @@ export default function register() {
             </label>
                 <button type='submit'>Create an Account</button>
             </form>
-           <p>This site is protected by reCAPTCHA and the <a href="#">Google Privacy Policy</a> and <a href="#">Terms of Service</a> apply. </p>
+           <p className='dess'>This site is protected by reCAPTCHA and the <a href="#">Google Privacy Policy</a> and <a href="#">Terms of Service</a> apply. </p>
         </div>
         <div className='containerRight_r'>
             <img src={Sideimg} alt="" />

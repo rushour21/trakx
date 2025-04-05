@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import iconpic from '../assets/iconpic.png'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import Logo from '../assets/logo.png'
-import { Calendar, Link2, Clock, Settings, Plus, Trash2, PencilLine, Copy   } from 'lucide-react';
+import { Calendar, Link2, Clock, Settings, Plus, LogOut  } from 'lucide-react';
 import "../styles/sidebar.css";
 
 export default function sidebar() {
+    const navigate = useNavigate();
     const [userName, setUserName] = useState("");
+    const [logout, setLogout] = useState(false)
 
     useEffect(() => {
         const fetchUserData = async () => {
@@ -51,13 +53,18 @@ export default function sidebar() {
     <div className="sidebar">
     <div className="sidebar-title"><img src={Logo} alt="" /></div>
     <nav className="sidebar-menu">
-      <NavLink to="event" className="menu-item"><Link2 /><span>Event</span></NavLink>
-      <NavLink to="booking" className="menu-item"><Calendar />Booking</NavLink>
-      <NavLink to="availability" className="menu-item"><Clock />Availability</NavLink>
-      <NavLink to="settings" className="menu-item"><Settings />Settings</NavLink>
-      <NavLink to="create" className="menu-create"><Plus/>Create</NavLink>
+      <NavLink to="event" className={({isActive}) => isActive ?"active-item menu-item" : 'menu-item' } ><Link2 /><span>Event</span></NavLink>
+      <NavLink to="booking" className={({isActive}) => isActive ?"active-item menu-item" : 'menu-item' } ><Calendar />Booking</NavLink>
+      <NavLink to="availability" className={({isActive}) => isActive ?"active-item menu-item" : 'menu-item' }><Clock />Availability</NavLink>
+      <NavLink to="settings" className={({isActive}) => isActive ?"active-item menu-item" : 'menu-item' }><Settings />Settings</NavLink>
+      <NavLink state={{ userName }} className={({isActive}) => isActive ?"active-create menu-create" : 'menu-create' } to="create" ><Plus/>Create</NavLink>
     </nav>
-    <div className='initial'><img src={iconpic} alt="" /><span>{userName ? userName : "Loading..."}</span></div>
+    
+    <div onClick={() => setLogout(true)} className='initial'><img src={iconpic} alt="" /><span>{userName ? userName : "Loading..."}</span></div>
+    {logout && (<button onClick={() => {
+            localStorage.removeItem("authToken"); // Remove token
+            navigate('/login'); // Redirect to login page
+        }} className='log-out'><LogOut /> Sign out</button>)}
   </div>
   )
 }

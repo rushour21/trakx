@@ -59,7 +59,7 @@ router.post("/bookingr", authMiddleware, availabilityMiddleware,  async (req, re
 router.get("/my-events", authMiddleware, async (req, res) => {
     try {
         const userId = req.user.id;
-        const myMeetings = await Meeting.find({ createdBy: userId }).select("eventTopic dateTime meetingLink bannerTitle duration");
+        const myMeetings = await Meeting.find({ createdBy: userId }).select("eventTopic dateTime meetingLink bannerTitle duration status");
 
         // Check if no meetings are found
         if (myMeetings.length === 0) {
@@ -72,6 +72,27 @@ router.get("/my-events", authMiddleware, async (req, res) => {
     } catch (err) {
         errorLogger(err, req, res);
     }
+});
+
+router.post("/my-events/status",  authMiddleware, async (req, res) => {
+    const { meetingId, status } = req.body;
+
+  try {
+    const updated = await Meetings.findByIdAndUpdate(
+      meetingId,
+      { status },
+      { new: true }
+    );
+
+    if (!updated) {
+      return res.status(404).json({ message: 'Meeting not found' });
+    }
+
+    res.status(200).json(updated);
+  } catch (error) {
+    console.error('Error updating status:', error);
+    res.status(500).json({ message: 'Failed to update status' });
+  }
 });
 
 router.delete("/booking-d/:bookingId", authMiddleware, errorLogger,  async (req, res) => {
@@ -230,4 +251,24 @@ router.put("/pending/updateStatus", authMiddleware, async (req, res) => {
         res.status(500).json({ error: "Internal Server Error" });
     }
 });
+
+router.get("/meetings", authMiddleware, async (req,res) => {
+    try {
+        const userEmail = req.user.email;
+        const Meetingevents = await Meeting.find({ 
+            participants: { 
+                $elemMatch: { email: userEmail} 
+            }}).select("eventTopic date time bannerTitle")
+
+            if (Meetingevents.length === 0) {
+                return res.status(200).json({
+                    message: "No past meetings found",
+                    Meetingevents: []
+                });
+            }
+            res.status(200).json({ Meetingevents });
+    } catch (error) {
+        errorLogger(err, req, res);
+    }
+})
 export default router;

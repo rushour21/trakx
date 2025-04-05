@@ -1,6 +1,7 @@
 import { StrictMode, lazy, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes, Navigate, Outlet } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import Login from './pages/login.jsx';
 import Register from './pages/register.jsx';
 import Dashboard from './pages/dashboard.jsx';
@@ -8,6 +9,7 @@ import Preference from './pages/preference.jsx';
 import Home from './pages/home.jsx'
 import ProtectedRoute from './component/protectedRoute.jsx'
 import './index.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const Event = lazy(() => import('./component/event.jsx'));
 const Booking = lazy(() => import('./component/booking.jsx'));
@@ -64,5 +66,15 @@ createRoot(document.getElementById('root')).render(
 
       </Routes>
     </BrowserRouter>
+    <ToastContainer
+      position="top-center"
+      autoClose={2000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick={false}
+      rtl={false}
+      pauseOnFocusLoss
+      theme="colored"
+      />
   </StrictMode>
 )
