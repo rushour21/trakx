@@ -1,0 +1,63 @@
+[2025-04-01T18:49:43.922Z] ReferenceError: upcomingMeetings is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:96:42
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-01T18:49:45.838Z] ReferenceError: upcomingMeetings is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:96:42
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-01T18:50:24.672Z] ReferenceError: upcomingMeetings is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:96:42
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-01T18:51:11.621Z] ReferenceError: upcomingMeetings is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:96:42
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-01T18:53:01.762Z] ReferenceError: upcomingMeetings is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:96:42
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-02T05:20:02.864Z] ReferenceError: allEmails is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:19:56
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at availabilityMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/checkAvailability.js:37:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-02T05:20:56.975Z] ReferenceError: allEmails is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:19:56
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at availabilityMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/checkAvailability.js:37:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-02T05:22:25.815Z] ReferenceError: allEmails is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:19:56
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at availabilityMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/checkAvailability.js:37:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-02T05:23:11.804Z] ReferenceError: allEmails is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:19:56
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at availabilityMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/checkAvailability.js:37:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-02T05:24:16.543Z] ValidationError: Meetings validation failed: participants.0.role: `invitor` is not a valid enum value for path `role`., participants.1.role: `invitor` is not a valid enum value for path `role`., participants.2.role: `invitor` is not a valid enum value for path `role`.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-04-02T05:26:33.086Z] ValidationError: Meetings validation failed: participants.0.role: `invitor` is not a valid enum value for path `role`., participants.1.role: `invitor` is not a valid enum value for path `role`., participants.2.role: `invitor` is not a valid enum value for path `role`.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-04-02T05:29:04.127Z] ValidationError: Meetings validation failed: participants.0.role: `invitor` is not a valid enum value for path `role`., participants.1.role: `invitor` is not a valid enum value for path `role`., participants.2.role: `invitor` is not a valid enum value for path `role`.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-04-02T05:31:43.530Z] ValidationError: Meetings validation failed: participants.0.role: `participant` is not a valid enum value for path `role`., participants.1.role: `participant` is not a valid enum value for path `role`., participants.2.role: `participant` is not a valid enum value for path `role`.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)

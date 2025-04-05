@@ -1,0 +1,12 @@
+GET /api/user/getName ::1
+GET /api/user/getName ::1
+GET /api/user/getName ::1
+GET /api/user/getName ::1
+GET /api/user/getName ::1
+GET /api/user/getName ::1
+POST /api/user/login ::1
+GET /api/user/profile ::1
+POST /api/user/login ::1
+POST /api/user/login ::1
+POST /api/user/login ::1
+PUT /api/user/profile ::1

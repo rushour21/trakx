@@ -1,0 +1,164 @@
+[2025-03-23T11:03:44.769Z] TypeError: Cannot read properties of undefined (reading 'trim')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:13:29
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:13:10
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-23T11:04:41.171Z] TypeError: Cannot read properties of undefined (reading 'trim')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:13:29
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:13:10
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-23T11:05:35.660Z] TypeError: Cannot read properties of undefined (reading 'trim')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:13:29
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:13:10
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-23T11:16:41.878Z] TypeError: Cannot read properties of undefined (reading 'trim')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:14:29
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:14:10
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-23T11:25:54.035Z] ReferenceError: User is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:22
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-23T11:27:07.684Z] ReferenceError: Cannot access 'user' before initialization
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:22
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-23T11:29:13.296Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:26
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-23T11:30:09.919Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:26
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-23T11:32:39.933Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:30
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-23T11:33:01.723Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:30
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-23T11:34:55.728Z] ReferenceError: User is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:30
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-23T11:35:36.338Z] TypeError: Cannot read properties of undefined (reading 'id')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:9:60
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-23T11:35:49.982Z] TypeError: Cannot read properties of undefined (reading 'id')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:9:60
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-23T11:36:08.377Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:30
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-23T11:37:13.425Z] TypeError: email.trim is not a function
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:20:30
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:20:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-03-23T11:57:32.693Z] TypeError: email.trim is not a function
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:20:30
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:20:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

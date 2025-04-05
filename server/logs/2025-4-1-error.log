@@ -1,0 +1,27 @@
+[2025-04-01T15:24:54.237Z] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: [ [Object], [Object] ]
+    at ServerResponse.writeHead (node:_http_server:351:11)
+    at ServerResponse._implicitHeader (node:_http_server:337:8)
+    at write_ (node:_http_outgoing:985:9)
+    at ServerResponse.end (node:_http_outgoing:1102:5)
+    at ServerResponse.send (D:\FullStacks_pro\trakX\server\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (D:\FullStacks_pro\trakX\server\node_modules\express\lib\response.js:278:15)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:118:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-01T15:25:21.281Z] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: [ [Object], [Object] ]
+    at ServerResponse.writeHead (node:_http_server:351:11)
+    at ServerResponse._implicitHeader (node:_http_server:337:8)
+    at write_ (node:_http_outgoing:985:9)
+    at ServerResponse.end (node:_http_outgoing:1102:5)
+    at ServerResponse.send (D:\FullStacks_pro\trakX\server\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (D:\FullStacks_pro\trakX\server\node_modules\express\lib\response.js:278:15)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:118:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-04-01T15:26:17.388Z] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: [ [Object], [Object] ]
+    at ServerResponse.writeHead (node:_http_server:351:11)
+    at ServerResponse._implicitHeader (node:_http_server:337:8)
+    at write_ (node:_http_outgoing:985:9)
+    at ServerResponse.end (node:_http_outgoing:1102:5)
+    at ServerResponse.send (D:\FullStacks_pro\trakX\server\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (D:\FullStacks_pro\trakX\server\node_modules\express\lib\response.js:278:15)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:118:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

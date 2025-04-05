@@ -1,0 +1,10 @@
+[2025-04-04T18:31:12.310Z] ValidationError: User validation failed: lastName: Path `lastName` is required., email: Path `email` is required.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-04-04T20:54:25.503Z] ValidationError: User validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required., email: Path `email` is required.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)

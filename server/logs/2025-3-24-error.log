@@ -1,0 +1,145 @@
+[2025-03-24T05:28:50.029Z] TypeError: Cannot read properties of undefined (reading 'trim')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:16:30
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:16:11
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:35:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-24T05:29:21.650Z] ValidationError: Meetings validation failed: participants.0.role: `invitor` is not a valid enum value for path `role`., participants.1.role: `invitor` is not a valid enum value for path `role`., participants.2.role: `invitor` is not a valid enum value for path `role`., participants.3.email: Path `email` is required.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-03-24T05:31:22.763Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:30
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:35:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-24T05:33:16.726Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:30
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:35:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-24T05:33:43.361Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:12:30
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:35:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-24T05:35:46.269Z] ReferenceError: getemail is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:14:67
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:35:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-24T05:36:10.918Z] ReferenceError: getemail is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:14:67
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:35:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-24T05:37:36.149Z] ReferenceError: email is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:14:67
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:35:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\index.js:346:12)
+[2025-03-24T05:38:53.630Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:19:26
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:16:36
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:35:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-24T05:44:58.398Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:19:26
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:16:36
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:35:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-24T05:47:44.618Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:19:26
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:16:36
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:38:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-03-24T05:50:23.949Z] ReferenceError: user is not defined
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:20:26
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:17:36
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:38:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-03-24T05:51:51.613Z] ValidationError: Meetings validation failed: participants.0.role: `invitor` is not a valid enum value for path `role`., participants.1.role: `invitor` is not a valid enum value for path `role`., participants.2.role: `invitor` is not a valid enum value for path `role`.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-03-24T13:26:43.857Z] TypeError: Cannot read properties of undefined (reading 'split')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:15:55
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at availabilityMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/checkAvailability.js:37:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-03-24T13:29:43.826Z] TypeError: Cannot read properties of undefined (reading 'split')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:15:55
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at availabilityMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/checkAvailability.js:37:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-03-24T13:30:35.086Z] TypeError: Cannot read properties of undefined (reading 'split')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:15:55
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:38:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

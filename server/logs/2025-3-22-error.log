@@ -1,0 +1,85 @@
+[2025-03-22T12:44:07.435Z] TypeError: Cannot read properties of undefined (reading 'trim')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:16:26
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:15:39
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-22T12:46:23.395Z] TypeError: Cannot read properties of undefined (reading 'trim')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:16:26
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:15:39
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-22T12:53:10.160Z] TypeError: Cannot read properties of undefined (reading 'trim')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:16:26
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:15:39
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-22T12:56:20.644Z] ValidationError: Meetings validation failed: participants.3.email: Path `email` is required.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-03-22T12:59:51.620Z] ValidationError: Meetings validation failed: participants.3.email: Path `email` is required.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-03-22T13:02:09.099Z] ValidationError: Meetings validation failed: participants.3.email: Path `email` is required.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-03-22T13:03:01.566Z] TypeError: Cannot read properties of undefined (reading 'trim')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:13:33
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:13:14
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-22T13:03:41.885Z] ValidationError: Meetings validation failed: participants.0.role: Path `role` is required., participants.1.role: Path `role` is required., participants.2.role: Path `role` is required.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-03-22T13:06:10.600Z] TypeError: Cannot read properties of undefined (reading 'trim')
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:13:29
+    at Array.map (<anonymous>)
+    at file:///D:/FullStacks_pro/trakX/server/routes/booking.js:13:10
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (file:///D:/FullStacks_pro/trakX/server/middleware/auth.js:19:9)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\FullStacks_pro\trakX\server\node_modules\express\lib\router\layer.js:95:5)
+[2025-03-22T13:08:45.676Z] ValidationError: Meetings validation failed: participants.0.role: `invitor` is not a valid enum value for path `role`., participants.1.role: `invitor` is not a valid enum value for path `role`., participants.2.role: `invitor` is not a valid enum value for path `role`.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)

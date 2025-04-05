@@ -1,0 +1,56 @@
+[2025-04-03T19:46:49.806Z] ValidationError: Meetings validation failed: participants.0.role: `invitor` is not a valid enum value for path `role`., participants.1.role: `invitor` is not a valid enum value for path `role`., participants.2.role: `invitor` is not a valid enum value for path `role`.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-04-03T19:48:30.407Z] ValidationError: Meetings validation failed: participants.0.role: `invitor` is not a valid enum value for path `role`., participants.1.role: `invitor` is not a valid enum value for path `role`., participants.2.role: `invitor` is not a valid enum value for path `role`.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at Subdocument.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-04-03T20:08:32.557Z] SyntaxError: Expected ',' or '}' after property value in JSON at position 169 (line 7 column 5)
+    at JSON.parse (<anonymous>)
+    at parse (D:\FullStacks_pro\trakX\server\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\FullStacks_pro\trakX\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:238:16)
+    at done (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-04-03T20:08:50.799Z] SyntaxError: Expected ',' or '}' after property value in JSON at position 168 (line 7 column 5)
+    at JSON.parse (<anonymous>)
+    at parse (D:\FullStacks_pro\trakX\server\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\FullStacks_pro\trakX\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:238:16)
+    at done (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-04-03T20:08:57.628Z] SyntaxError: Expected ',' or '}' after property value in JSON at position 168 (line 7 column 5)
+    at JSON.parse (<anonymous>)
+    at parse (D:\FullStacks_pro\trakX\server\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\FullStacks_pro\trakX\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:238:16)
+    at done (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-04-04T06:22:30.808Z] SyntaxError: Expected property name or '}' in JSON at position 11 (line 3 column 4)
+    at JSON.parse (<anonymous>)
+    at parse (D:\FullStacks_pro\trakX\server\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\FullStacks_pro\trakX\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:238:16)
+    at done (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\FullStacks_pro\trakX\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)

@@ -1,0 +1,15 @@
+POST /api/user/login ::1
+GET /api/booking/pending ::1
+POST /api/booking/my-events ::1
+POST /api/booking/my-events ::1
+GET /api/booking/my-events ::1
+POST /api/booking/bookingr ::1
+POST /api/booking/bookingr ::1
+POST /api/booking/bookingr ::1
+POST /api/booking/bookingr ::1
+POST /api/booking/bookingr ::1
+POST /api/booking/bookingr ::1
+POST /api/booking/bookingr ::1
+POST /api/booking/bookingr ::1
+POST /api/booking/bookingr ::1
+POST /api/booking/bookingr ::1

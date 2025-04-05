@@ -1,4 +1,10 @@
 import fs from "fs";
+
+// Ensure logs directory exists
+const logDir = './logs';
+if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir);
+}
 export default function log(req, res, next) {
     const date = new Date();
     const logFile = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}.log`;

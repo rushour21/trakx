@@ -1,0 +1,95 @@
+[2025-03-26T10:33:35.243Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T10:38:05.367Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T10:38:28.819Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T10:41:13.954Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T10:42:44.703Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T10:47:11.682Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T10:55:44.149Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T10:59:15.007Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T12:21:44.520Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T12:27:10.378Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T12:27:53.242Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T12:29:13.856Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T12:32:54.430Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T12:34:59.780Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T12:35:17.007Z] MongoServerError: E11000 duplicate key error collection: test.users index: userName_1 dup key: { userName: null }
+    at InsertOneOperation.execute (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\FullStacks_pro\trakX\server\node_modules\mongodb\lib\collection.js:157:16)
+[2025-03-26T17:54:56.699Z] ValidationError: User validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required., email: Path `email` is required.
+    at Document.invalidate (D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3329:32)
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\document.js:3090:17
+    at D:\FullStacks_pro\trakX\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
