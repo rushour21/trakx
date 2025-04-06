@@ -18,10 +18,13 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
-app.use(log);
+app.use(cors({
+    origin: ["http://localhost:5173", "https://trakx.onrender.com"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: true,
+  }));
 app.use(errorLogger);
-app.use('/api/user', user);
+app.use('/api/user', user); 
 app.use('/api/booking', booking);
 app.use('/api/availability', availabilityRoutes);
 
