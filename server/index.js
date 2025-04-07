@@ -16,13 +16,15 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
     origin: ["https://trakx-five.vercel.app", "https://trakx.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   }));
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(errorLogger);
 app.use('/api/user', user); 
 app.use('/api/booking', booking);
