@@ -63,7 +63,7 @@ export default function sidebar() {
     <div onClick={() => setLogout(true)} className='initial'><img src={iconpic} alt="" /><span>{userName ? userName : "Loading..."}</span></div>
     {logout && (<button onClick={() => {
             localStorage.removeItem("authToken"); // Remove token
-            navigate('/login'); // Redirect to login page
+            navigate('/'); // Redirect to home page
         }} className='log-out'><LogOut /> Sign out</button>)}
   </div>
   )

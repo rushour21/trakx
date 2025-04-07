@@ -194,7 +194,7 @@ export default function home() {
         </div>
         <div className='h-footer'>
             <div className='f1'>
-                <div><button style={{width: "70px", height:"5vh"}} onClick={() => navigate('/login')}>Lg In</button> <button onClick={() => navigate('/register')} className='signup-button'>Sign up free</button></div>
+                <div><button style={{width: "70px", height:"5vh"}} onClick={() => navigate('/login')}>Log In</button> <button onClick={() => navigate('/register')} className='signup-button'>Sign up free</button></div>
                 <div className='fo-links'>
                     {footerLinks.map((link, index) => (
                     <p key={index}>{link}</p>
