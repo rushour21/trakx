@@ -1,6 +1,6 @@
 # Trakx 🎯
 
-A full-stack application for managing Meetings and user preferences.
+A full-stack application for creating and managing meetings, availability slots, and user preferences.
 
 ---
 
@@ -36,5 +36,5 @@ A full-stack application for managing Meetings and user preferences.
 ### Clone the repo
 
 ```bash
-git clone https://github.com/your-username/trakx.git
+git clone https://github.com/rushour21/trakx.git
 cd trakx
