@@ -112,7 +112,7 @@ export default function Event() {
         <button className='create-button' onClick={() => navigate('/dashboard/create')} >+ Add ne event</button>
       </div>
       <div className='card-container'>
-        {bookings.map ((booking, index) => {
+      {bookings.length > 0 && bookings.map ((booking, index) => {
           const { formattedDate, formattedTime, startDate } = formatDate(booking.dateTime);
           const endTime = calculateEndTime(startDate, booking.duration);
 

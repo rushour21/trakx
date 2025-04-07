@@ -48,7 +48,8 @@ export default function Login() {
         { username, preference : selectedCategory },
         { headers: { 'Content-Type': 'application/json' } }
       );
-  
+      const token = res.data.token;
+      localStorage.setItem("authToken", token);
       toast.success("Saved now ")
       console.log("Server Response:", response.data);
       navigate('/dashboard');

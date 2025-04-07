@@ -60,10 +60,17 @@ router.post("/preference/:userId", errorLogger,  async (req, res) => {
         }
         await existingUser.save();
 
+        const token = jwt.sign({
+            id: existingUser._id,
+            username: existingUser.userName
+        }, process.env.JWT_SECRET, { expiresIn: "3h" });
+
         res.status(200).json({
             message: "Username and preference updated successfully",
             username: existingUser.userName,
-            preference: existingUser.preference
+            preference: existingUser.preference,
+            token
+            
         });
     } catch (err) {
         errorLogger(err, req, res);
