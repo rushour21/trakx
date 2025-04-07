@@ -29,6 +29,9 @@ A full-stack application for creating and managing meetings, availability slots,
 - React Router for routing
 - Deployed on **Vercel**
 
+###  live 
+- https://trakx-five.vercel.app
+
 ---
 
 ## 📦 Setup Instructions
