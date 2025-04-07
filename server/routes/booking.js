@@ -182,7 +182,7 @@ router.get("/past", authMiddleware, async (req, res) => {
             participants: { 
                 $elemMatch: { email: userEmail} 
             },
-
+            
         }).select("eventTopic dateTime duration participants bannerTitle");
         if (pastMeetings.length === 0) {
             return res.status(200).json({
