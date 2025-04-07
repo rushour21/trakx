@@ -4,7 +4,7 @@ import Logo from '../assets/logo.png'
 import screen1 from "../assets/screen 1.png"
 import screen2 from "../assets/screen 3.png"
 import screen3 from "../assets/screen 4.png"
-import img1 from "../assets/Audiomack.png"
+import img1 from "../assets/audiomack.png"
 import img2 from "../assets/a.png"
 import img3 from "../assets/i.png"
 import img4 from "../assets/n.png"
