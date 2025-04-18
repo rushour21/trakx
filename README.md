@@ -2,6 +2,8 @@
 
 A full-stack application for creating and managing meetings, availability slots, and user preferences.
 
+https://trakx-five.vercel.app/
+
 ---
 
 ## 🚀 Features
